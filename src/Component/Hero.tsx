@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="bg-hero-image md:h-screen h-auto flex flex-col md:flex-row justify-center items-center w-full bg-center bg-dunes bg-cover p-4 md:px-12 2xl:px-48">
-        <div className="w-full md:w-1/2 p-2 text-right md:mb-8">
+        <div className="w-full md:w-1/2 p-2 text-right md:mb-8 mr-24">
           <h1 className="text-4xl md:text-6xl font-bold mb-8 text-[#FF0000] font-josefin-sans tracking-tighter">
             علي النونو
           </h1>
