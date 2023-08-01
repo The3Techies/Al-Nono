@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      cairo: ['Cairo']
+      cairo: ['Cairo', 'sans-serif'],
+      'josefin-sans': ['Josefin Sans', 'sans-serif'],
     },
     extend: {},
   },
