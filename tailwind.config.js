@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      cairo: ['Cairo', 'sans-serif'],
+      'josefin-sans': ['Josefin Sans', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],

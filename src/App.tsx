@@ -10,11 +10,13 @@ import OutsideTheFiled from './Component/OutsideTheFiled'
 import Contact from './Component/Contact'
 import Footer from './Component/Footer'
 
+
+
 function App() {
 
   return (
     <div>
-     <Navbar/>
+    <Navbar />
      <Hero/>
      <AboutMe/>
      <MyHistory/>
