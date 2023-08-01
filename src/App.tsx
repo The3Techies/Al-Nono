@@ -15,7 +15,7 @@ import Footer from './Component/Footer'
 function App() {
 
   return (
-    <div>
+    <div className='font-josefin-sans'>
     <Navbar />
      <Hero/>
      <AboutMe/>

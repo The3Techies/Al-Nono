@@ -38,6 +38,8 @@ const Navbar: React.FC = () => {
 
   const handleLinkClick = (index: number) => {
     setActiveLink(index);
+    console.log(index)
+
   };
 
   return (
@@ -58,7 +60,6 @@ const Navbar: React.FC = () => {
               key={index}
               href={btn.route}
               onClick={() => handleLinkClick(index)}
-              onFocus={() => handleLinkClick(index)}
               className={`text-white hover:text-[#08D565] hover:text-lg ${activeLink === index ? 'text-[#08D565]' : ''
                 }${index === btns.length - 1 ? ' bg-red-500 py-2 px-4 border-2' : ''}`}
             >
@@ -100,9 +101,8 @@ const Navbar: React.FC = () => {
               key={btn.route}
               href={btn.route}
               onClick={() => handleLinkClick(index)}
-              onFocus={() => handleLinkClick(index)}
-              className={`block text-white hover:text-gray-200 py-2 px-4 ${activeLink === index ? 'text-[#08D565]' : ''
-                }${index === btns.length - 1 ? ' bg-red-500' : ''}`}
+              className={`block text-white hover:text-gray-200 py-2 px-4 ${activeLink === index ? ' text-[#08D565]' : ''}
+              ${index === btns.length - 1 ? ' bg-red-500' : ''}`}
             >
               {btn.name}
             </a>
