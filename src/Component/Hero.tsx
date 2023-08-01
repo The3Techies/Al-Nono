@@ -1,10 +1,13 @@
+import "../App.css"
 function Hero() {
 
     return (
-      <div>
-        <h1 className=' text-center'>Hero</h1>
-      </div>
+      <div className="bg-hero-image md:h-screen h-aout flex justify-center items-center w-full bg-center bg-dunes bg-cover">
+        hero
+    </div>
     )
   }
   
   export default Hero
+
+

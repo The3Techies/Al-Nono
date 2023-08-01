@@ -1,0 +1,7 @@
+.bg-hero-image {
+  /* Specify the URL of the GIF image */
+  background-image: url("./assets/hero.webp");
+  background-size: cover;
+  background-position: center;
+  animation: mymove 5s infinite;
+}
