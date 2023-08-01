@@ -9,7 +9,9 @@ export default {
       cairo: ['Cairo', 'sans-serif'],
       'josefin-sans': ['Josefin Sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+     
+    },
   },
   plugins: [],
 }
