@@ -72,7 +72,7 @@ const MyHistory: React.FC = () => {
         <button
             key={index}
             className={
-                " w-52 h-12 rounded-lg bg-black text-xl font-bold shadow-[0_4px_4px_0px] bg-opacity-60" +
+                " w-52 h-12 rounded-lg text-xl font-bold shadow-[0_4px_4px_0px] bg-opacity-60" +
                 (index === indexactive
                     ? "  shadow-[#D50808] text-[#F0F4FA] border-2 border-[#D50808] bg-[#641313]"
                     : " shadow-gray-500 text-[#F0F4FA] text-opacity-80 border-2 border-black bg-black ")
