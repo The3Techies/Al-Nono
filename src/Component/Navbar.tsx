@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#0E0E0E] p-4 md:px-12 2xl:px-48 font-cairo font-bold border-b-2 text-lg sticky top-0">
+    <nav className="bg-[#0E0E0E] p-2 md:px-12 2xl:px-48 font-cairo font-bold border-b-2 text-lg sticky top-0">
       <div className="flex justify-between items-center">
         <div>
           <a

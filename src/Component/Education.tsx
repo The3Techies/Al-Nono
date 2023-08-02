@@ -1,8 +1,8 @@
-function Education() {
 
+const Education: React.FC = () => {
     return (
         <div>
-            <h1 className=' text-center'>Education</h1>
+            <h1 className=' text-center text-[#fff]'>Education</h1>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-function Gallery() {
 
+const Gallery: React.FC = () => {
     return (
         <div>
-            <h1 className=' text-center'>Gallery</h1>
+            <h1 className=' text-center text-[#fff]'>Gallery</h1>
         </div>
     )
 }
