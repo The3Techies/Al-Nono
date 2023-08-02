@@ -4,11 +4,10 @@ import Hero from './Component/Hero'
 import AboutMe from './Component/AboutMe'
 import MyHistory from './Component/MyHistory'
 import Achievements from './Component/Achievements'
+import Awards from './Component/Awards'
 import Education from './Component/Education'
 import Gallery from './Component/Gallery'
-import OutsideTheFiled from './Component/OutsideTheFiled'
 import Contact from './Component/Contact'
-import Footer from './Component/Footer'
 
 
 
@@ -21,11 +20,10 @@ function App() {
      <AboutMe/>
      <MyHistory/>
      <Achievements/>
-     <Education/>
+     <Awards/>
      <Gallery/>
-     <OutsideTheFiled/>
+     <Education/>
      <Contact/>
-     <Footer/>
     </div>
   )
 }
