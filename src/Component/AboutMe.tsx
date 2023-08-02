@@ -45,7 +45,7 @@ const AboutMe: React.FC = () => {
   return (
     <div className="bg-center bg-cover mt-20 pb-10 " style={{ backgroundImage: '' }}>
 
-      <div className="flex flex-col-reverse md:flex-row justify-around ">
+      <div className="flex flex-col-reverse md:flex-row justify-around items-end ">
 
         <div className="w-[50%]">
 
