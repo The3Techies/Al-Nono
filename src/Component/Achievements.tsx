@@ -78,7 +78,7 @@ const Achievements: React.FC = () => {
                     </div>
                 </div>
 
-                <img src="/AchievementsImgs/Achievements2edImg.webp" alt="Achievements2edImg.webp" className="w-[25%] -mt-24" />
+                <img src="/AchievementsImgs/Achievements2edImg.webp" alt="Achievements2edImg.webp" className="w-[25%] -mt-24 2xl:-mt-40" />
             </div>
 
         </div>
