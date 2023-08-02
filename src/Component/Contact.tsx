@@ -1,8 +1,7 @@
-function Contact() {
-
+const Contact: React.FC = () => {
     return (
         <div>
-            <h1 className=' text-center'>Contact</h1>
+            <h1 className=' text-center text-[#fff]'>Contact</h1>
         </div>
     )
 }

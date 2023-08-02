@@ -33,7 +33,6 @@ const aboutDataHtml = aboutData.map((section, index) => (
       {section.icon}
     </h1>
 
-
     <p className="mr-2">
       <h3 className="text-2xl font-bold text-[#F0F4FA] mb-1">{section.title}</h3>
       <p className='text-white text-opacity-80 text-xs text-justify '>{section.content}</p>
