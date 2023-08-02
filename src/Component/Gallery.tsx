@@ -44,14 +44,14 @@ const Gallery: React.FC = () => {
     return (
         <div className="bg-[#000] bg-opacity-40 flex flex-col items-center -mt-4">
 
-            <div className="flex flex-col w-[90%] h-screen ">
+            <div className="flex flex-col w-[90%] ">
 
-                <h1 className="text-3xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-2">الاستديو</h1>
+                <h1 className="text-3xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-8">الاستديو</h1>
 
                 <div className="flex justify-around items-center">
                     <div className=" cursor-pointer" onClick={() => ChangeImgs("right")}>{RightIcon}</div>
 
-                    <div className="flex flex-row-reverse justify-center w-[90%] h-[90%] gap-3 select-none">
+                    <div className="flex flex-row-reverse justify-center w-[90%] h-96 2xl:h-[34rem] gap-3 select-none">
 
 
                         <img src={`/GalleryImgs/GalleryImg${firsImgNum}.webp`} alt={`GalleryImg ${firsImgNum}`} className="w-[33%] h-full object-cover" />

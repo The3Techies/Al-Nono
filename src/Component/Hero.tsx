@@ -54,32 +54,32 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center">
 
-      <div className="bg-[url('/HeroImgs/hero.jpg')] md:h-screen h-auto w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover  ">
+      <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover  ">
 
         <div className="w-full md:w-[40%] p-2 text-right md:mb-8 ">
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#D50808]  tracking-tighter">
+          <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808]  tracking-tighter">
             علي النونو
           </h1>
 
-          <p className="text-sm mb-6 font-bold text-[#F0F4FA] text-justify max-w-sm ">
+          <p className="text-sm 2xl:text-lg mb-6 font-bold text-[#F0F4FA] text-justify  ">
             أفضل لاعب كرة قدم في اليمن، يتمتع بموهبة لا تضاهى وإلتزام قوي وشغف متجدد
             يجعله بطلاً حقيقياً على أرض الملعب وفي حياته الشخصية.
           </p>
 
           <button
-            className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo"
+            className="py-2 px-8 2xl:text-2xl bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo"
           >
             أقرأ أكثر
           </button>
 
         </div>
 
-        <div className="w-full md:w-[40%] ">
+        <div className="w-full md:w-[40%]">
           <img
             src={heroImage}
             alt="Hero Image"
-            className="w-full "
+            className="w-[90%] "
           />
         </div>
       </div>

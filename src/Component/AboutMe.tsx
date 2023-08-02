@@ -34,8 +34,8 @@ const aboutDataHtml = aboutData.map((section, index) => (
     </h1>
 
     <div className="mr-2">
-      <h1 className="text-2xl font-bold text-[#F0F4FA] mb-1">{section.title}</h1>
-      <p className='text-white text-opacity-80 text-xs text-justify '>{section.content}</p>
+      <h1 className="text-2xl 2xl:text-3xl font-bold text-[#F0F4FA] mb-1">{section.title}</h1>
+      <p className='text-white text-opacity-80 text-xs 2xl:text-sm text-justify '>{section.content}</p>
     </div>
 
   </div>
@@ -43,28 +43,28 @@ const aboutDataHtml = aboutData.map((section, index) => (
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-center bg-cover mt-20 pb-8 " style={{ backgroundImage: '' }}>
+    <div className="bg-center bg-cover mt-20 pb-10 " style={{ backgroundImage: '' }}>
 
-      <div className="flex flex-col-reverse md:flex-row justify-around">
+      <div className="flex flex-col-reverse md:flex-row justify-around ">
 
         <div className="w-[50%]">
 
-          <h1 className="text-3xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-2">
+          <h1 className="text-3xl 2xl:text-5xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-2">
             <span className=" text-[#D50808]">معلومات</span> عني
           </h1>
 
           {aboutDataHtml}
 
           <button
-            className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo mr-12"
+            className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo mr-14 mt-2"
           >
             أقرأ أكثر
           </button>
 
         </div>
 
-        <div className="w-[30%] rounded-s-sm">
-          <img src={image} alt="ali alnon image" className="w-full h-auto" />
+        <div className="rounded-s-sm ">
+          <img src={image} alt="ali alnon image" className="w-full h-[29rem] " />
         </div>
 
       </div>
