@@ -40,7 +40,7 @@ const infoDataHtml = infoData.map((section, index) => (
     <div className={"mt-4 mr-4 " + (index === 1 ? " text-[#000]" : " text-[#fff]")}>
       {section.iconSmall}
       <h1 className='text-right font-bold mt-2 text-lg'>{section.hedaer}</h1>
-      <p className='text-sm'>{section.info}</p>
+      <p className='text-sm '>{section.info}</p>
     </div>
     <div className="opacity-20 self-end ">
       {section.iconBig}
@@ -58,11 +58,11 @@ const Hero: React.FC = () => {
 
         <div className="w-full md:w-[40%] p-2 text-right md:mb-8 ">
 
-          <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808]  tracking-tighter">
+          <h1 className="text-6xl 2xl:text-9xl font-bold mb-8 text-[#D50808] tracking-tighter">
             علي النونو
           </h1>
 
-          <p className="text-sm 2xl:text-lg mb-6 font-bold text-[#F0F4FA] text-justify  ">
+          <p className="text-sm 2xl:text-lg mb-12 font-bold text-[#F0F4FA] text-justify leading-8 ">
             أفضل لاعب كرة قدم في اليمن، يتمتع بموهبة لا تضاهى وإلتزام قوي وشغف متجدد
             يجعله بطلاً حقيقياً على أرض الملعب وفي حياته الشخصية.
           </p>
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           <img
             src={heroImage}
             alt="Hero Image"
-            className="w-[90%] "
+            className="w-[90%] md:p-8"
           />
         </div>
       </div>

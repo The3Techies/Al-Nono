@@ -43,7 +43,7 @@ const aboutDataHtml = aboutData.map((section, index) => (
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-center bg-cover mt-20 pb-10 " style={{ backgroundImage: '' }}>
+    <div className="bg-center bg-cover mt-20 pb-10 bg-[url(/AboutMeImgs/AboutMeBg.webp)] " >
 
       <div className="flex flex-col-reverse md:flex-row justify-around items-end ">
 

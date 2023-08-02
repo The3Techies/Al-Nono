@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#0E0E0E] p-2 md:px-12 2xl:px-48 font-cairo font-bold border-b-2 text-lg sticky top-0">
+    <nav className="bg-[#0E0E0E] p-4 md:px-12 2xl:px-48 font-cairo font-bold border-b-2 text-lg sticky top-0">
       <div className="flex justify-between items-center">
         <div>
           <a
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               href={btn.route}
               onClick={() => handleLinkClick(index)}
               className={`text-white hover:text-[#08D565] hover:text-lg ${activeLink === index ? 'text-[#08D565]' : ''
-                }${index === btns.length - 1 ? ' bg-red-500 py-2 px-4 border-2' : ''}`}
+                }${index === btns.length - 1 ? ' bg-[#D50808] py-2 px-4 border-2' : ''}`}
             >
               {btn.name}
             </a>
