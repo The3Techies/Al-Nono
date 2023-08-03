@@ -33,9 +33,9 @@ const Navbar: React.FC = () => {
   ];
 
   const handleScrollToComponent = (componentId: string) => {
-    let offsetValue = -100 
+    let offsetValue = -100
 
-    if(componentId === "MyHistory") offsetValue = -300
+    if (componentId === "MyHistory") offsetValue = -300
 
     scroller.scrollTo(componentId, {
       duration: 800, // scroll duration in milliseconds
@@ -45,12 +45,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#060606] p-2 pr-12 pl-14 font-cairo font-bold border-b-[1px] border-[#F0F4FA] sticky top-0 z-50">
+    <nav className="bg-[#060606] p-4 md:pr-12 md:pl-14 font-cairo font-bold border-b-[1px] border-[#F0F4FA] sticky top-0 z-50">
       <div className="flex justify-between items-center">
 
         <p className="text-[#FF0707] px-4 py-2 rounded-md tracking-widest cursor-pointer text-sm" onClick={() => handleScrollToComponent("Hero")}>علي النونو</p>
 
-        <div className="hidden lg:flex items-center tracking-widest gap-6">
+        <div className="hidden lg:flex items-center tracking-widest gap-10">
           {btns.map((btn, index) => (
             <p
               key={index}
@@ -89,12 +89,12 @@ const Navbar: React.FC = () => {
 
       {/* Responsive Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden mt-2">
+        <div className="lg:hidden mt-4">
           {btns.map((btn, index) => (
             <a
               key={index}
               onClick={() => handleScrollToComponent(btn.componentId)}
-              className={`block text-white hover:text-gray-200 py-2 px-4 ${index === btns.length - 1 ? ' bg-red-500' : ''}`}
+              className={`block text-white hover:text-gray-200 py-4 px-4 ${index === btns.length - 1 ? ' bg-red-500' : ''}`}
             >
               {btn.name}
             </a>

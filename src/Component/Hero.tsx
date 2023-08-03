@@ -38,14 +38,13 @@ const infoData: SectionData[] = [
 const handleScrollToComponent = () => {
   scroller.scrollTo('AboutMe', {
     duration: 800, // scroll duration in milliseconds
-    offset: -100 , // offset from the top (adjust if you have a fixed header)
+    offset: -100, // offset from the top (adjust if you have a fixed header)
     smooth: true, // smooth scrolling
   });
 };
 
 const infoDataHtml = infoData.map((section, index) => (
-  <div key={index} className="w-[270px] h-[206px] flex justify-around" style={{ backgroundColor: section.bgColor }}>
-
+  <div key={index} className="w-[270px] h-[206px] hidden mt-14 md:flex justify-around" style={{ backgroundColor: section.bgColor }}>
     <div className={"mt-4 mr-4 " + (index === 1 ? " text-[#000]" : " text-[#fff]")}>
       {section.iconSmall}
       <h1 className='text-right font-bold mt-2 text-lg'>{section.hedaer}</h1>
@@ -63,21 +62,21 @@ const Hero: React.FC = () => {
   return (
     <div id="Hero" className="flex flex-col justify-center items-center">
 
-      <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover  ">
+      <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover md:mt-2 mt-12  md:p-0 px-4">
 
         <div className="w-full md:w-[40%] p-2 text-right md:mb-8 ">
 
-          <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808]  tracking-tighter">
+          <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808] tracking-tighter">
             علي النونو
           </h1>
 
-          <p className="text-sm 2xl:text-lg mb-6 font-bold text-[#F0F4FA] text-justify  ">
+          <p className="md:text-base leading-8 text-sm  2xl:text-lg mb-6 font-bold text-[#F0F4FA] text-justify tracking-wider">
             أفضل لاعب كرة قدم في اليمن، يتمتع بموهبة لا تضاهى وإلتزام قوي وشغف متجدد
             يجعله بطلاً حقيقياً على أرض الملعب وفي حياته الشخصية.
           </p>
 
           <button
-            className="py-2 px-8 2xl:text-2xl bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo"
+            className="py-2 px-8 2xl:text-2xl bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo mb-4"
             onClick={handleScrollToComponent}
           >
             أقرأ أكثر
@@ -85,11 +84,11 @@ const Hero: React.FC = () => {
 
         </div>
 
-        <div className="w-full md:w-[40%]">
+        <div className="w-full md:w-[50%] p-12">
           <img
             src={heroImage}
             alt="Hero Image"
-            className="w-[90%] "
+            className="w-[90%] mr-20"
           />
         </div>
       </div>
