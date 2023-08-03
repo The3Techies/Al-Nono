@@ -73,7 +73,7 @@ const AboutMe: React.FC = () => {
 
         </div>
 
-        <div className="rounded-s-sm w-[35%]">
+        <div className="rounded-s-sm ">
           <img src={image} alt="ali alnon image" className="w-full h-[29rem] " />
         </div>
 
