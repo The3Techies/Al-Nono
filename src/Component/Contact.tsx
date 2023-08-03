@@ -37,7 +37,7 @@ const TwitterIcon = <svg xmlns="http://www.w3.org/2000/svg" width="72" height="7
 
 const Contact: React.FC = () => {
     return (
-        <div className="bg-[url(/ContactImgs/ContactBg.webp)] bg-opacity-40  flex flex-col items-center">
+        <div id="Contact" className="bg-[url(/ContactImgs/ContactBg.webp)] bg-opacity-40  flex flex-col items-center">
 
             <div className="flex flex-col w-[90%] items-center mt-4">
                 <h1 className=" text-[#D50808] font-bold text-4xl font-cairo">تابعني</h1>

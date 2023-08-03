@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-const RightIcon = <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+const RightIcon = <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 62 62" fill="none">
     <g clipPath="url(#clip0_180_20)">
         <path d="M15.8604 55.5117L51.1859 32.0814L15.8604 8.65118V55.5117Z" stroke="#D50808" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
     </g>
@@ -11,7 +11,7 @@ const RightIcon = <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62"
         </clipPath>
     </defs></svg>
 
-const LeftIcon = <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none" >
+const LeftIcon = <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 62 62" fill="none" >
     <g clipPath="url(#clip0_180_23)">
         <path d="M46.1396 55.5117L10.8141 32.0814L46.1396 8.65118V55.5117Z" stroke="#D50808" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
     </g>
