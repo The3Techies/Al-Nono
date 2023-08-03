@@ -1,4 +1,5 @@
 import React from "react";
+import { scroller } from 'react-scroll';
 import heroImage from "/HeroImgs/heroImage.webp";
 
 
@@ -34,6 +35,14 @@ const infoData: SectionData[] = [
   },
 ]
 
+const handleScrollToComponent = () => {
+  scroller.scrollTo('AboutMe', {
+    duration: 800, // scroll duration in milliseconds
+    offset: -100 , // offset from the top (adjust if you have a fixed header)
+    smooth: true, // smooth scrolling
+  });
+};
+
 const infoDataHtml = infoData.map((section, index) => (
   <div key={index} className="w-[270px] h-[206px] flex justify-around" style={{ backgroundColor: section.bgColor }}>
 
@@ -52,23 +61,24 @@ const infoDataHtml = infoData.map((section, index) => (
 const Hero: React.FC = () => {
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div id="Hero" className="flex flex-col justify-center items-center">
 
       <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover  ">
 
         <div className="w-full md:w-[40%] p-2 text-right md:mb-8 ">
 
-          <h1 className="text-6xl 2xl:text-9xl font-bold mb-8 text-[#D50808] tracking-tighter">
+          <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808]  tracking-tighter">
             علي النونو
           </h1>
 
-          <p className="text-sm 2xl:text-lg mb-12 font-bold text-[#F0F4FA] text-justify leading-8 ">
+          <p className="text-sm 2xl:text-lg mb-6 font-bold text-[#F0F4FA] text-justify  ">
             أفضل لاعب كرة قدم في اليمن، يتمتع بموهبة لا تضاهى وإلتزام قوي وشغف متجدد
             يجعله بطلاً حقيقياً على أرض الملعب وفي حياته الشخصية.
           </p>
 
           <button
             className="py-2 px-8 2xl:text-2xl bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo"
+            onClick={handleScrollToComponent}
           >
             أقرأ أكثر
           </button>
@@ -79,7 +89,7 @@ const Hero: React.FC = () => {
           <img
             src={heroImage}
             alt="Hero Image"
-            className="w-[90%] md:p-8"
+            className="w-[90%] "
           />
         </div>
       </div>

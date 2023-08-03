@@ -1,4 +1,5 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 import image from '/AboutMeImgs/aboutImage.webp';
 
 interface SectionData {
@@ -41,9 +42,17 @@ const aboutDataHtml = aboutData.map((section, index) => (
   </div>
 ))
 
+const handleScrollToComponent = () => {
+  scroller.scrollTo('MyHistory', {
+    duration: 800, // scroll duration in milliseconds
+    offset: -300, // offset from the top (adjust if you have a fixed header)
+    smooth: true, // smooth scrolling
+  });
+};
+
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-center bg-cover mt-20 pb-10 bg-[url(/AboutMeImgs/AboutMeBg.webp)] " >
+    <div id='AboutMe' className="bg-center bg-cover mt-10 pb-10 bg-[url(/AboutMeImgs/AboutMeBg.webp)] " >
 
       <div className="flex flex-col-reverse md:flex-row justify-around items-end ">
 
@@ -57,6 +66,7 @@ const AboutMe: React.FC = () => {
 
           <button
             className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo mr-14 mt-2"
+            onClick={handleScrollToComponent}
           >
             أقرأ أكثر
           </button>

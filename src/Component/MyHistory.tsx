@@ -53,7 +53,7 @@ const MyHistory: React.FC = () => {
 
     const infoHtml = info[indexactive].years.map((year, index) => {
         return (
-            <div key={index} className="flex gap-2 mt-2 ">
+            <div id="MyHistory" key={index} className="flex gap-2 mt-2 ">
 
                 <div className="w-[15px] h-[15px] rounded-full bg-[#D50808] mt-1"></div>
 

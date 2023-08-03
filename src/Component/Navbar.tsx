@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import { scroller } from 'react-scroll';
 
 interface NavButton {
   name: string;
-  route: string;
+  componentId: string;
 }
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(1);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -16,55 +16,49 @@ const Navbar: React.FC = () => {
   const btns: NavButton[] = [
     {
       name: 'الرئيسية',
-      route: '/',
+      componentId: 'Hero',
     },
     {
       name: 'عني',
-      route: '/about',
+      componentId: 'AboutMe',
     },
     {
       name: 'تاريخي',
-      route: '/history',
-    },
-    {
-      name: 'الجوائز',
-      route: '/awards',
+      componentId: 'MyHistory',
     },
     {
       name: 'تابعني',
-      route: '/followMe',
+      componentId: 'Contact',
     },
   ];
 
-  const handleLinkClick = (index: number) => {
-    setActiveLink(index);
-    console.log(index)
+  const handleScrollToComponent = (componentId: string) => {
+    let offsetValue = -100 
 
+    if(componentId === "MyHistory") offsetValue = -300
+
+    scroller.scrollTo(componentId, {
+      duration: 800, // scroll duration in milliseconds
+      offset: offsetValue, // offset from the top (adjust if you have a fixed header)
+      smooth: true, // smooth scrolling
+    });
   };
 
   return (
-    <nav className="bg-[#0E0E0E] p-4 md:px-12 2xl:px-48 font-cairo font-bold border-b-2 text-lg sticky top-0">
+    <nav className="bg-[#060606] p-2 pr-12 pl-14 font-cairo font-bold border-b-[1px] border-[#F0F4FA] sticky top-0 z-50">
       <div className="flex justify-between items-center">
-        <div>
-          <a
-            href="/"
-            className="text-[#FF0707] px-4 py-2 rounded-md  tracking-widest"
-          >
-            علي النونو
-          </a>
-        </div>
+
+        <p className="text-[#FF0707] px-4 py-2 rounded-md tracking-widest cursor-pointer text-sm" onClick={() => handleScrollToComponent("Hero")}>علي النونو</p>
 
         <div className="hidden lg:flex items-center tracking-widest gap-6">
           {btns.map((btn, index) => (
-            <a
+            <p
               key={index}
-              href={btn.route}
-              onClick={() => handleLinkClick(index)}
-              className={`text-white hover:text-[#08D565] hover:text-lg ${activeLink === index ? 'text-[#08D565]' : ''
-                }${index === btns.length - 1 ? ' bg-[#D50808] py-2 px-4 border-2' : ''}`}
+              onClick={() => handleScrollToComponent(btn.componentId)}
+              className={`text-white cursor-pointer text-sm ${index === btns.length - 1 ? ' bg-[#D50808] py-2 px-4 rounded-md hover:text-[#000]' : ' hover:text-[#FF0707]'}`}
             >
               {btn.name}
-            </a>
+            </p>
           ))}
         </div>
 
@@ -98,11 +92,9 @@ const Navbar: React.FC = () => {
         <div className="lg:hidden mt-2">
           {btns.map((btn, index) => (
             <a
-              key={btn.route}
-              href={btn.route}
-              onClick={() => handleLinkClick(index)}
-              className={`block text-white hover:text-gray-200 py-2 px-4 ${activeLink === index ? ' text-[#08D565]' : ''}
-              ${index === btns.length - 1 ? ' bg-red-500' : ''}`}
+              key={index}
+              onClick={() => handleScrollToComponent(btn.componentId)}
+              className={`block text-white hover:text-gray-200 py-2 px-4 ${index === btns.length - 1 ? ' bg-red-500' : ''}`}
             >
               {btn.name}
             </a>
