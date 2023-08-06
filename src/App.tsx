@@ -1,5 +1,6 @@
 import './index.css'
-
+import { Analytics } from '@vercel/analytics/react';
+ 
 import Navbar from './Component/Navbar'
 import Hero from './Component/Hero'
 import AboutMe from './Component/AboutMe'
@@ -25,6 +26,7 @@ function App() {
      <Gallery/>
      <Education/>
      <Contact/>
+     <Analytics mode={'production'} />;
     </div>
   )
 }
