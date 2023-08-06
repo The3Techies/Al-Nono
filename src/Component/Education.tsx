@@ -22,11 +22,11 @@ const Education: React.FC = () => {
 
                 <div className="flex mt-4">
 
-                    <div className="w-[60%]">
+                    <div className="md:w-[60%] w-auto">
                         {educationDataHtml}
                     </div>
 
-                    <img src="/EducationImgs/EducationMainImg.webp" alt="EducationMainImg" className="h-[26rem] object-cover" />
+                    <img src="/EducationImgs/EducationMainImg.webp" alt="EducationMainImg" className="h-[26rem] object-cover hidden md:flex" />
 
                 </div>
             </div>

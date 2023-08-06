@@ -51,9 +51,6 @@ const Contact: React.FC = () => {
                 <div className="h-[2px] w-full bg-[#F0F4FA] bg-opacity-60 mt-6"></div>
                 <p className="text-[#F0F4FA] text-opacity-80 font-bold mt-4"> جميع الحقوق محفوظة <span className="">ProTechies 2023</span></p>
             </div>
-
-            <div className="w-full bg-[black] text-center text-[#fff] font-bold text-xl p-2 mt-4">AboGhanem</div>
-
         </div>
     )
 }
