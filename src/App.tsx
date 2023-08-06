@@ -1,4 +1,5 @@
 import './index.css'
+
 import Navbar from './Component/Navbar'
 import Hero from './Component/Hero'
 import AboutMe from './Component/AboutMe'
