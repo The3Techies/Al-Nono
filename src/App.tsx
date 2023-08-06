@@ -21,7 +21,7 @@ function App() {
      <MyHistory/>
      <Achievements/>
      <Awards/>
-     {/* <Gallery/> */}
+     <Gallery/>
      <Education/>
      <Contact/>
     </div>
