@@ -52,20 +52,20 @@ const handleScrollToComponent = () => {
 
 const AboutMe: React.FC = () => {
   return (
-    <div id='AboutMe' className="bg-center bg-cover mt-10 pb-10 bg-[url(/AboutMeImgs/AboutMeBg.webp)] " >
+    <div id='AboutMe' className="bg-center bg-cover mt-10 pb-10 bg-[url(/AboutMeImgs/AboutMeBg.webp)]" >
 
-      <div className="flex flex-col-reverse md:flex-row justify-around items-end ">
+      <div className="flex flex-col-reverse md:flex-row justify-around items-start ">
 
-        <div className="w-[50%]">
+        <div className="md:w-[50%] p-6 md:p-0">
 
-          <h1 className="text-3xl 2xl:text-5xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-2">
+          <h1 className="text-3xl 2xl:text-5xl font-bold text-[#F0F4FA] w-fit border-b-4 pb-2 mb-2 ">
             <span className=" text-[#D50808]">معلومات</span> عني
           </h1>
 
           {aboutDataHtml}
 
           <button
-            className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo mr-14 mt-2"
+            className="py-2 px-8 bg-[#D50808] text-[#F0F4FA] rounded-md font-medium font-cairo md:mr-14 mt-2"
             onClick={handleScrollToComponent}
           >
             أقرأ أكثر
@@ -73,8 +73,8 @@ const AboutMe: React.FC = () => {
 
         </div>
 
-        <div className="rounded-s-sm ">
-          <img src={image} alt="ali alnon image" className="w-full h-[29rem] " />
+        <div className="rounded-s-sm self-center mb-4">
+          <img src={image} alt="ali alnon image" className="w-auto h-[29rem] " />
         </div>
 
       </div>

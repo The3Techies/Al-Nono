@@ -53,7 +53,6 @@ const Gallery: React.FC = () => {
 
                     <div className="flex flex-row-reverse justify-center w-[90%] h-96 2xl:h-[34rem] gap-3 select-none">
 
-
                         <img src={`/GalleryImgs/GalleryImg${firsImgNum}.webp`} alt={`GalleryImg ${firsImgNum}`} className="w-[33%] h-full object-cover" />
                         <img src={`/GalleryImgs/GalleryImg${secondImgNum}.webp`} alt={`GalleryImg ${secondImgNum}`} className="w-[33%] h-full object-cover" />
                         <img src={`/GalleryImgs/GalleryImg${thirdImgNum}.webp`} alt={`GalleryImg ${thirdImgNum}`} className="w-[33%] h-full  object-cover" />
