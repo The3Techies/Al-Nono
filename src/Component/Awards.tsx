@@ -26,12 +26,12 @@ const awardsData: SectionData[] = [
 const awardsDataHtml = awardsData.map((section, index) => (
   <div key={index} className="flex md:flex-row flex-col justify-between mb-6">
 
-    <div className="bg-[url(/AwardsImgs/AwardsBgSmall.webp)] bg-cover md:h-[200px] md:w-[30%]  border-[1px] border-[#fff] flex justify-around items-center p-4">
+    <div className="bg-[url(/AwardsImgs/AwardsBgSmall.webp)] bg-cover min-h-[200px] md:w-[30%]  border-[1px] border-[#fff] flex justify-around items-center p-4">
       <img src={section.imgUrl} alt={`award ${index} img`} className="w-14 h-14 md:w-auto md:h-auto" />
       <h1 className="text-[#fff] font-bold text-3xl text-center">{section.title}</h1>
     </div>
 
-    <div className="bg-[url(/AwardsImgs/AwardsBgBig.webp)] bg-cover h-[200px] md:w-[68%] border-[1px] border-[#fff] flex justify-center items-center">
+    <div className="bg-[url(/AwardsImgs/AwardsBgBig.webp)] bg-cover min-h-[200px] md:w-[68%] border-[1px] border-[#fff] flex justify-center items-center">
       <p className="text-[#F0F4FA] text-opacity-80 text-center text-sm p-4">{section.info}</p>
     </div>
 

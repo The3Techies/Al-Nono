@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useSwipeable } from 'react-swipeable';
 
 
 const RightIcon = <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 62 62" fill="none">
@@ -41,6 +42,17 @@ const Gallery: React.FC = () => {
     }
   }
 
+
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      ChangeImgs("left")
+    },
+    onSwipedRight: () => {
+      ChangeImgs("right")
+    },
+  })
+
   return (
     <div className="bg-[#000] bg-opacity-40 flex flex-col items-center -mt-4">
 
@@ -51,11 +63,11 @@ const Gallery: React.FC = () => {
         <div className="flex justify-around items-center">
           <div className=" cursor-pointer" onClick={() => ChangeImgs("right")}>{RightIcon}</div>
 
-          <div className="flex flex-row-reverse justify-center w-[90%] h-96 2xl:h-[34rem] gap-4 select-none">
+          <div {...handlers} className="flex flex-row-reverse justify-center w-[90%] h-96 2xl:h-[34rem] gap-4 select-none"  >
 
-            <img src={`/GalleryImgs/GalleryImg${firsImgNum}.webp`} alt={`GalleryImg ${firsImgNum}`} className="w-[33%] h-full object-cover " />
-            <img src={`/GalleryImgs/GalleryImg${secondImgNum}.webp`} alt={`GalleryImg ${secondImgNum}`} className="w-[33%] h-full object-cover " />
-            <img src={`/GalleryImgs/GalleryImg${thirdImgNum}.webp`} alt={`GalleryImg ${thirdImgNum}`} className="w-[33%] h-full  object-cover" />
+            <img src={`/GalleryImgs/GalleryImg${firsImgNum}.webp`} alt={`GalleryImg ${firsImgNum}`} className="md:w-[33%]  h-full object-cover " />
+            <img src={`/GalleryImgs/GalleryImg${secondImgNum}.webp`} alt={`GalleryImg ${secondImgNum}`} className="w-[33%] h-full object-cover hidden md:block " />
+            <img src={`/GalleryImgs/GalleryImg${thirdImgNum}.webp`} alt={`GalleryImg ${thirdImgNum}`} className="w-[33%] h-full  object-cover hidden md:block" />
 
           </div>
 

@@ -44,7 +44,7 @@ const handleScrollToComponent = () => {
 };
 
 const infoDataHtml = infoData.map((section, index) => (
-  <div key={index} className="w-[270px] h-[206px] hidden mt-14 md:flex justify-around" style={{ backgroundColor: section.bgColor }}>
+  <div key={index} className="w-[270px] h-[206px] mt-14 flex justify-around" style={{ backgroundColor: section.bgColor }}>
     <div className={"mt-4 mr-4 " + (index === 1 ? " text-[#000]" : " text-[#fff]")}>
       {section.iconSmall}
       <h1 className='text-right font-bold mt-2 text-lg'>{section.hedaer}</h1>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
 
       <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover md:mt-2 mt-12  md:p-0 px-4">
 
-        <div className="w-full md:w-[40%] p-2 text-right md:mb-8 ">
+        <div className="w-full md:w-[40%] p-2 text-right md:mb-8 mb-12 h-full md:h-fit md:mt-0 mt-12 ">
 
           <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808] tracking-tighter">
             علي النونو
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
 
         </div>
 
-        <div className="w-full md:w-[50%] p-12">
+        <div className="w-full md:w-[50%] p-12 md:block hidden">
           <img
             src={heroImage}
             alt="Hero Image"
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:-mt-20 sm:flex flex-wrap w-full h-auto">
+      <div className="justify-center md:-mt-20 md:flex hidden flex-wrap w-full h-auto">
         {infoDataHtml}
       </div>
 
