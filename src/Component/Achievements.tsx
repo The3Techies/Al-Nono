@@ -44,7 +44,7 @@ const myAchievementsHtml = myAchievements.map((section, index) => (
 
 const Achievements: React.FC = () => {
   return (
-    <div className="bg-cover bg-lightgray bg-[url('/AchievementsImgs/AchievementsBg.png')] py-10 flex flex-col items-center">
+    <div className="bg-cover bg-lightgray bg-[url('/AchievementsImgs/AchievementsBg.webp')] py-10 flex flex-col items-center">
 
       <div className="flex flex-col md:flex-row w-[90%] justify-between">
         <div>
