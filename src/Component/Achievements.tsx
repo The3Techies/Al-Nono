@@ -60,21 +60,21 @@ const Achievements: React.FC = () => {
 
       <div className="flex w-[90%] justify-between md:mt-0 mt-14">
 
-        <div className="flex gap-10 w-[50%] mt-6 text-center">
+        <div className="flex flex-wrap gap-10 md:w-[50%] mt-6 text-center justify-center md:justify-start">
 
           <div >
-            <h1 className="text-[#FFF] font-bold md:text-5xl text-3xl mb-4">7<span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">09</span></h1>
-            <h1 className="text-[#FFF] font-bold md:text-4xl text-2xl">مباراة</h1>
+            <h1 className="text-[#FFF] font-bold text-5xl  mb-4">7<span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">09</span></h1>
+            <h1 className="text-[#FFF] font-bold text-4xl ">مباراة</h1>
           </div>
 
           <div >
-            <h1 className="text-[#FFF] font-bold md:text-5xl text-3xl mb-4">2<span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">26</span></h1>
-            <h1 className="text-[#FFF] font-bold md:text-4xl text-2xl">هدف</h1>
+            <h1 className="text-[#FFF] font-bold text-5xl  mb-4">2<span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">26</span></h1>
+            <h1 className="text-[#FFF] font-bold text-4xl ">هدف</h1>
           </div>
 
           <div>
-            <h1 className="text-[#FFF] font-bold md:text-5xl text-3xl mb-4"><span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">03</span></h1>
-            <h1 className="text-[#FFF] font-bold md:text-4xl text-2xl">أفضل لاعب</h1>
+            <h1 className="text-[#FFF] font-bold text-5xl mb-4"><span className="bg-[#FF0202] bg-opacity-75 rounded-tr-[30px] pt-4 pr-2">03</span></h1>
+            <h1 className="text-[#FFF] font-bold text-4xl ">أفضل لاعب</h1>
           </div>
         </div>
 

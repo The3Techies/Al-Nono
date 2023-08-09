@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
 
       <div className="bg-[url('/HeroImgs/hero.jpg')]  w-full flex flex-col md:flex-row justify-around items-center bg-center bg-cover md:mt-2 mt-12  md:p-0 px-4">
 
-        <div className="w-full md:w-[40%] p-2 text-right md:mb-8 mb-12 h-full md:h-fit md:mt-0 mt-12 ">
+        <div className="w-full md:w-[40%] p-2 text-right md:mb-8 h-fit ">
 
           <h1 className="text-6xl 2xl:text-9xl font-bold mb-4 text-[#D50808] tracking-tighter">
             علي النونو
@@ -84,11 +84,11 @@ const Hero: React.FC = () => {
 
         </div>
 
-        <div className="w-full md:w-[50%] p-12 md:block hidden">
+        <div className="w-full md:w-[50%] p-12 flex justify-center ">
           <img
             src={heroImage}
             alt="Hero Image"
-            className="w-[90%] mr-20"
+            className="md:w-[90%] md:mr-20"
           />
         </div>
       </div>
