@@ -84,7 +84,7 @@ const MyHistory: React.FC = () => {
   ));
 
   return (
-    <div className="bg-cover bg-lightgray bg-[url('/MyHistoryImgs/BgMyHistory.png')] py-12 flex justify-center">
+    <div className="bg-cover bg-lightgray bg-[url('/MyHistoryImgs/BgMyHistory.webp')] py-12 flex justify-center">
       <div className="flex flex-col md:flex-row w-[90%] justify-between">
         <div className="flex flex-col gap-6 md:flex-col ">
           <h1 className="text-3xl font-bold text-[#F0F4FA] md:w-52 w-fit border-b-4 pb-2 mb-2">

@@ -9,25 +9,39 @@ const awardsData: SectionData[] = [
   {
     title: "هداف الدوري",
     info: "علي النونو، النجم الكروي المميز، تمكّن من تحقيق لقب هداف الدوري في ثلاث مواسم متفرِّدة. فقد أظهر قوة تهديفية لا مثيل لها ومهارات بارعة في تسجيل الأهداف في الملاعب المحلية، حيث أبدع في موسم 2000/2001 وأعاد التألق في موسم 2004 وموسم 2012/2013. إن حصوله على هذا اللقب الغالي يُجسّد التأثير الإيجابي الذي يمتلكه ويؤكد مكانته كأحد أعظم الهدافين في تاريخ الدوري والكرة اليمنية بشكل عام.",
-    imgUrl: "/AwardsImgs/award1.webp"
+    imgUrl: ""
   },
   {
     title: "أفضل لاعب مهاجم",
     info: "تم تكريم علي النونو بلقب أفضل لاعب مهاجم في استفتاء كاك بنك لثلاث سنوات متتالية. هذا التكريم يعكس تميزه في تحقيق الإنجازات الفردية والتأثير الإيجابي الذي يمارسه في خط هجوم فرقه.",
-    imgUrl: "/AwardsImgs/award2.webp"
+    imgUrl: ""
   },
   {
     title: "هداف غرب آسيا",
     info: "تألق علي النونو في بطولة غرب آسيا بالأردن في عام 2010، وحصل على لقب هداف البطولة. قاد هجوم منتخب بلاده ببراعة وحسم العديد من المباريات بتسجيله للأهداف الحاسمة.",
-    imgUrl: "/AwardsImgs/award3.webp"
+    imgUrl: ""
   }
 ]
+
+function updateImageSrc() {
+  if (window.innerWidth <= 768) {
+    awardsData[0].imgUrl = '/AwardsImgs/mobileAward1.webp'
+    awardsData[1].imgUrl = '/AwardsImgs/mobileAward2.webp'
+    awardsData[2].imgUrl = '/AwardsImgs/mobileAward3.webp'
+  } else {
+    awardsData[0].imgUrl = '/AwardsImgs/desktopAward1.webp'
+    awardsData[1].imgUrl = '/AwardsImgs/desktopAward2.webp'
+    awardsData[2].imgUrl = '/AwardsImgs/desktopAward3.webp'
+  }
+}
+updateImageSrc();
+window.addEventListener('resize', updateImageSrc);
 
 const awardsDataHtml = awardsData.map((section, index) => (
   <div key={index} className="flex md:flex-row flex-col justify-between mb-6">
 
     <div className="bg-[url(/AwardsImgs/AwardsBgSmall.webp)] bg-cover min-h-[200px] md:w-[30%]  border-[1px] border-[#fff] flex justify-around items-center p-4">
-      <img src={section.imgUrl} alt={`award ${index} img`} className="w-14 h-14 md:w-auto md:h-auto" />
+      <img src={section.imgUrl} alt={`award ${index} img`} className="w-14 h-14 md:w-auto md:h-auto " />
       <h1 className="text-[#fff] font-bold text-3xl text-center">{section.title}</h1>
     </div>
 
